@@ -1,7 +1,7 @@
 
 # Philip's dotfile
 
-# Credit: Pablo Caranzza (github.com/pcarranza)
+Credit: Pablo Caranzza (github.com/pcarranza)
 
 Quite simple project that only intends to aim as one configuration to rule them all
 

@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="stahlp"
+ZSH_THEME="sammy"
 
 set COMPLETE_IN_WORD
 setopt NO_BEEP

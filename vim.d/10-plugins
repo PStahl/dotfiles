@@ -1,0 +1,59 @@
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" alternatively, pass a path where Vundle should install bundles
+"let path = '~/some/path/here'
+"call vundle#rc(path)
+
+" let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-fugitive'
+Bundle 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+Plugin 'mileszs/ack.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'powerline/fonts'
+Plugin 'scrooloose/syntastic'
+
+" to prevent yaml from being so slow
+Bundle 'stephpy/vim-yaml'
+
+syntax on
+filetype off
+filetype plugin indent on
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AIRLINE
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_powerline_fonts = 1
+let g:airline_section_warning=""
+let g:airline_theme="molokai"
+let g:airline#extensions#whitespace#enabled = 1
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CTRL P
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
+let g:clear_cache_on_exit = 0
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ACK
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ack_default_options = " -s -H --nocolor --nogroup"
+let g:ackprg = "/apollo/env/envImprovement/bin/ack"
+map f :Ack!
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SYNTASTIC
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntastic
+let g:syntastic_aggregate_errors = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:yntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_loc_list_height=5

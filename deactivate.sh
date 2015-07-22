@@ -6,17 +6,23 @@ if [ ! -f deactivate.sh ]; then
 fi
 
 cd ~
-unlink ~/.gitconfig  
-unlink ~/.githelpers 
-unlink ~/.gitignore  
-unlink ~/.vim        
-unlink ~/.vimrc        
-unlink ~/.irbrc        
+unlink ~/.gitconfig
+unlink ~/.githelpers
+unlink ~/.gitignore
+unlink ~/.vim
+unlink ~/.vim.d
+unlink ~/.vimrc
 unlink ~/.zshrc
-unlink ~/.zsh_aliases  
 unlink ~/.oh-my-zsh
 
-unlink .dotfiles/bin/git-difference
-unlink /usr/bin/runpipe
-unlink /usr/bin/swap-io-usage
-unlink /usr/bin/swap-usage
+ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_g_into_git zsh_tweaks"
+[[ $OSTYPE == darwin* ]] && ZSH_FILES="$ZSH_FILES zsh_osx_specifics"
+for FILE in $(echo $ZSH_FILES); do 
+    unlink ~/.$FILE
+done
+
+echo <<-EOF
+Dotfiles enabled, by default this includes zsh, irb, git and vim personal configurations.
+echo <<-EOF
+Dotfiles disabled.
+EOF

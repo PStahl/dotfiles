@@ -16,7 +16,7 @@ plugins=(git web-search colored-man colorize github jira vagrant virtualenv pip 
 
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sammy"
-source ~/.zsh_aliases
+source $ZSH/oh-my-zsh.sh
 
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local

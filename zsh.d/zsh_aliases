@@ -1,4 +1,4 @@
-alias grep='grep --color=always'
+#alias grep='grep --color=always'
 alias grepr="grep -r"
 
 alias ll="ls -l"

@@ -15,7 +15,7 @@ unlink ~/.vimrc
 unlink ~/.zshrc
 unlink ~/.oh-my-zsh
 
-ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_g_into_git zsh_tweaks"
+ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_functions zsh_tweaks"
 [[ $OSTYPE == darwin* ]] && ZSH_FILES="$ZSH_FILES zsh_osx_specifics"
 for FILE in $(echo $ZSH_FILES); do 
     unlink ~/.zsh.d/$FILE

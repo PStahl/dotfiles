@@ -23,7 +23,7 @@ ln -s .dotfiles/oh-my-zsh .oh-my-zsh
 
 [[ ! -d ~/.zsh.d ]] && mkdir -p ~/.zsh.d
 
-ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_g_into_git zsh_tweaks"
+ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_functions zsh_tweaks"
 [[ $OSTYPE == darwin* ]] && ZSH_FILES="$ZSH_FILES zsh_osx_specifics"
 for FILE in $(echo $ZSH_FILES); do 
     TARGET_FILE="~/.zsh.d/$FILE"

@@ -15,3 +15,13 @@ g() {
 
 # Complete g like git
 compdef g=git
+
+
+# Shorten for vim
+v() {
+    if [[ $# > 0 ]]; then
+        vim $@
+    else
+        vim -c CtrlP
+    fi
+}

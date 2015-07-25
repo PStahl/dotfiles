@@ -13,7 +13,7 @@ unlink ~/.vim
 unlink ~/.vim.d
 unlink ~/.vimrc
 unlink ~/.zshrc
-unlink ~/.oh-my-zsh
+rm ~/.oh-my-zsh
 
 ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_functions zsh_tweaks"
 [[ $OSTYPE == darwin* ]] && ZSH_FILES="$ZSH_FILES zsh_osx_specifics"

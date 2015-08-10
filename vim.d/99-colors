@@ -17,3 +17,4 @@ hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
 hi clear SpellRare
 hi SpellRare cterm=underline
+hi NonText ctermfg=7

@@ -43,7 +43,7 @@ let g:clear_cache_on_exit = 0
 " ACK
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ack_default_options = " -s -H --nocolor --nogroup"
-let g:ackprg = "/apollo/env/envImprovement/bin/ack"
+let g:ackprg = "/usr/local/bin/ack"
 map f :Ack!
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

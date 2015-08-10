@@ -12,6 +12,7 @@ set hidden                             " Don't close buffers when changing, just
 set nowrap                             " Don't wrap large lines
 set history=1000                       " Remember 100 history commands
 set undolevels=1000                    " Bigger undo memory
+set nu                                 " Show line number
 
 set visualbell                         " silence please
 set noerrorbells                       " I said silence

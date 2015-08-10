@@ -14,5 +14,7 @@ alias cdd='cd ~/dev'
 
 alias lth='ssh ada10pst@login.student.lth.se'
 
+alias sr='screen -r'
+
 function regex { gawk 'match($0,/'$1'/, ary) {print ary['${2:-'0'}']}'; }
 

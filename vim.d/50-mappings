@@ -65,3 +65,12 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " ControlP binding
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>t :CtrlP<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" OPEN FILES IN DIRECTORY OF CURRENT FILE
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <expr> %% expand('%:h').'/'
+map <leader>e :edit %%
+map <leader>v :view %%
+
+nnoremap <leader><leader> <c-^>

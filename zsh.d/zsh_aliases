@@ -10,6 +10,8 @@ alias res="source ~/.zshrc"
 alias vi="vim"
 alias vip="vi -c CtrlP"
 
+alias r='rails'
+
 alias cdd='cd ~/dev'
 
 alias lth='ssh ada10pst@login.student.lth.se'

@@ -12,7 +12,15 @@ alias vip="vi -c CtrlP"
 
 alias r='rails'
 
+alias j='java'
+alias jrar='java -jar'
+alias jc='javac'
+alias ju='java -cp ~/java/junit-4.12.jar ord.junit.runner.JUnitCore'
+
 alias cdd='cd ~/dev'
+alias edan20='cd ~/dev/edan20'
+alias edan25='cd ~/dev/edan25'
+alias edan65='cd ~/dev/edan65'
 
 alias lth='ssh ada10pst@login.student.lth.se'
 

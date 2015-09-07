@@ -16,6 +16,7 @@ ln -s .dotfiles/vim .vim
 ln -s .dotfiles/vim.d .vim.d
 ln -s .dotfiles/vimrc .vimrc
 ln -s .dotfiles/zshrc .zshrc
+ln -s .dotfiles/tmux.conf .tmux.conf
 
 vim +PluginInstall +qall
 

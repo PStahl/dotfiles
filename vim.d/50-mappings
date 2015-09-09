@@ -74,3 +74,8 @@ map <leader>e :edit %%
 map <leader>v :view %%
 
 nnoremap <leader><leader> <c-^>
+
+"""""""""""""""""""
+" AUTOFORMAT
+" """""""""""""""""
+noremap <leader><a> :Autoformat<CR>

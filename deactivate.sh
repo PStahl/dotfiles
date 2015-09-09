@@ -13,6 +13,7 @@ unlink ~/.vim
 unlink ~/.vim.d
 unlink ~/.vimrc
 unlink ~/.zshrc
+unlink ~/.tmux.conf
 rm ~/.oh-my-zsh
 
 ZSH_FILES="zsh_aliases zsh_paths zsh_terminal_tweaking zsh_functions zsh_tweaks"

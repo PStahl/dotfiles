@@ -30,5 +30,5 @@ function regex { gawk 'match($0,/'$1'/, ary) {print ary['${2:-'0'}']}'; }
 
 
 ## Lunicore specific
-alias luni='cd ~/lunicore'
+alias luni='cd ~/dev/lunicore'
 alias thule='cd ~/dev/lunicore/thule/thule'

@@ -41,7 +41,7 @@ set wildmode=longest,list
 set wildmenu
 
 " Things that any file autocomplete will ignore
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.class
 set wildignore+=*/_site/*
 
 set laststatus=2                       " Show status line in windows => always

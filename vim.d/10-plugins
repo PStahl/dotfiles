@@ -41,6 +41,7 @@ let g:airline#extensions#whitespace#enabled = 1
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:30,results:30'
 let g:clear_cache_on_exit = 0
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|vendor/bundle$'
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ACK

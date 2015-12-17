@@ -1,0 +1,5 @@
+--type-set=inc=.inc
+--type-set=tpl=.tpl
+--ignore-dir=log
+--ignore-dir=vendor
+--ignore-dir=tmp

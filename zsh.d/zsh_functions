@@ -25,3 +25,7 @@ v() {
         vim -c CtrlP
     fi
 }
+
+f() {
+    find . -name "$*";
+}

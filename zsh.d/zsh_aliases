@@ -29,7 +29,14 @@ alias sr='screen -r'
 
 function regex { gawk 'match($0,/'$1'/, ary) {print ary['${2:-'0'}']}'; }
 
+alias ports='lsof -i -n -P'
+
+## Vagrant
+alias vup='vagrant up'
+alias vsusp='vagrant suspend'
+alias vst='vagrant global-status'
 
 ## Lunicore specific
 alias luni='cd ~/dev/lunicore'
 alias thule='cd ~/dev/lunicore/thule/thule'
+alias digilys='cd ~/dev/lunicore/digilys/digilys/app'

@@ -47,3 +47,4 @@
 
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/local/bin/vim

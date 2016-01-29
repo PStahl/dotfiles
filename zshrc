@@ -17,6 +17,10 @@ plugins=(git web-search colored-man colorize github jira vagrant virtualenv pip 
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sammy"
 source $ZSH/oh-my-zsh.sh
+function virtualenv_info {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+PROMPT='$(virtualenv_info)%{$fg[white]%}%c$(git_prompt_info)$ % %{$reset_color%}'
 
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
